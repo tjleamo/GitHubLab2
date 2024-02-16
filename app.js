@@ -1,3 +1,6 @@
+/**
+ * Trevor Leamon and Marco Hernandez
+ */
 const board = [
     [0, 0, 0, 0],
     [0, 0, 0, 0],
@@ -38,7 +41,7 @@ function display() {
 
 function assignRandom() {
     let row = Math.floor(Math.random() * 4)
-    let colo = Math.floor(Math.random() * 4)
+    let col = Math.floor(Math.random() * 4)
     if (board[row][col] == 0) {
         let chance = Math.random();
         if (chance > 0.9)
@@ -82,3 +85,7 @@ function changeColor(row, col) {
 assignRandom();
 assignRandom();
 display();
+
+/**
+ * Tested and found no errors - Marco Hernandez
+ */
